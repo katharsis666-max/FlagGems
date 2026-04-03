@@ -4930,3 +4930,17 @@ ops:
       - Tensor
     stages:
       stable: '2.1'
+   - name: grid_sample
+    description: |
+      Spatial Transformer Networks operator that performs spatial transformation 
+      using grid sampling with bilinear or nearest interpolation.
+    for:
+      - grid_sampler_2d
+    labels:
+      - aten
+      - SpatialTransformer
+      - Interpolation
+    kind:
+      - NeuralNetwork
+    stages:
+      beta: '5.0'
